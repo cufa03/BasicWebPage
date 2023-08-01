@@ -13,7 +13,7 @@ const Newsletter = () => {
         <div className='my-4'>
           <div className='flex flex-col sm:flex-row items-center justify-between w-full'>
             <input
-              className='p-3 flex w-full rounded-md text-blakc'
+              className='p-3 flex w-full rounded-md text-black'
               type='email'
               placeholder='example@email.com'
             />
