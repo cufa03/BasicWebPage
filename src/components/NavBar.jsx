@@ -10,11 +10,21 @@ const NavBar = () => {
     <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
       <h1 className='w-full text-3xl font-bold text-[#00df9a]'>REACT.</h1>
       <ul className='hidden md:flex'>
-        <li className='p-4'>Home</li>
-        <li className='p-4'>Company</li>
-        <li className='p-4'>Resources</li>
-        <li className='p-4'>About</li>
-        <li className='p-4'>Contact</li>
+        <li className='p-4'>
+          <span className='cursor-pointer'> Home</span>
+        </li>
+        <li className='p-4'>
+          <span className='cursor-pointer'> Company</span>
+        </li>
+        <li className='p-4'>
+          <span className='cursor-pointer'> Resources</span>
+        </li>
+        <li className='p-4'>
+          <span className='cursor-pointer'> About</span>
+        </li>
+        <li className='p-4'>
+          <span className='cursor-pointer'> Contact</span>
+        </li>
       </ul>
       <div onClick={handleNav} className='cursor-pointer block md:hidden'>
         {nav ? <AiOutlineClose size={23} /> : <AiOutlineMenu size={23} />}
@@ -32,11 +42,21 @@ const NavBar = () => {
         </h1>
 
         <ul className='uppercase p-3'>
-          <li className='p-4 border-b border-gray-600'>Home</li>
-          <li className='p-4 border-b border-gray-600'>Company</li>
-          <li className='p-4 border-b border-gray-600'>Resources</li>
-          <li className='p-4 border-b border-gray-600'>About</li>
-          <li className='p-4'>Contact</li>
+          <li className='p-4 border-b border-gray-600 '>
+            <span className='cursor-pointer'>Home</span>
+          </li>
+          <li className='p-4 border-b border-gray-600'>
+            <span className='cursor-pointer'>Company </span>
+          </li>
+          <li className='p-4 border-b border-gray-600'>
+            <span className='cursor-pointer'>Resources </span>
+          </li>
+          <li className='p-4 border-b border-gray-600'>
+            <span className='cursor-pointer'>About </span>
+          </li>
+          <li className='p-4'>
+            <span className='cursor-pointer'>Contact </span>
+          </li>
         </ul>
       </div>
     </div>
